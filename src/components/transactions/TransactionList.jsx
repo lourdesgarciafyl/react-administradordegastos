@@ -5,7 +5,7 @@ function TransactionList() {
     const {transactions, deleteTransaction} = useGlobalState();
 
   return (
-    <div className='divTransacciones'>
+    <div>
     {
     transactions.map(transaction => (
         <div key={transaction.id}>
