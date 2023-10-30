@@ -9,7 +9,8 @@ function TransactionItem ({transaction}) {
             <p className="text-sm">{transaction.description}</p>
             <div>
             <span>${transaction.amount}</span>
-            <button onClick={()=>{deleteTransaction(transaction.id)}}>
+            <button className="bg-indigo-700 text-white p-2 ms-1"
+            onClick={()=>{deleteTransaction(transaction.id)}}>
                 X
             </button>
             </div>
